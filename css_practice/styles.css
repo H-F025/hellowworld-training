@@ -1,0 +1,102 @@
+h1 {
+  /* CSSドリルNo.1 */
+  font-size: 24px;
+  /* CSSドリルNo.2 */
+  font-weight: bold;
+  /* CSSドリルNo.3 */
+  font-family: sans-serif;
+}
+
+p {
+  /* CSSドリルNo.4 */
+  text-align: left;
+}
+
+ul {
+  /* CSSドリルNo.5 */
+  text-align: right;
+  list-style: none;
+}
+
+.third-text {
+  /* CSSドリルNo.6 */
+  text-align: center;
+  /* CSSドリルNo.7 */
+  text-decoration: underline;
+  /* CSSドリルNo.8 */
+  letter-spacing: 0.1em;
+  /* CSSドリルNo.9 */
+  color: red;
+  /* CSSドリルNo.10 */
+  background-color: black;
+}
+
+.fourth-text {
+  /* CSSドリルNo.11 */
+  background-image: url("./images/IMG_1857.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  /* CSSドリルNo.12 */
+  background-repeat: no-repeat;
+  /* CSSドリルNo.13 */
+  width: 200px;
+  /* CSSドリルNo.14 */
+  height: 400px;
+  /* CSSドリルNo.15 */
+  margin: 20px;
+  /* CSSドリルNo.16 */
+  padding: 10px;
+  /* CSSドリルNo.17 */
+  border: 2px solid black;
+  /* CSSドリルNo.18 */
+  overflow: auto;
+}
+
+.fifth-text {
+  /* CSSドリルNo.19 */
+  display: none;
+}
+
+.container {
+  /* CSSドリルNo.20 */
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+    /* CSSドリルNo.21 */
+  z-index: 2;
+}
+
+.image2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 250px;
+  z-index: 1;
+}
+
+.first-list {
+  /* CSSドリルNo.22 */
+  text-align: left;
+  list-style-type: square;
+}
+
+table {
+  /* CSSドリルNo.23 */
+  border: 1px solid black;
+  border-collapse: separate;
+  /* CSSドリルNo.24 */
+  border-spacing: 20px 1px;
+}
+
+button {
+  /* CSSドリルNo.25 */
+  cursor: pointer;
+}
