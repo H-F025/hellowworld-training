@@ -1,0 +1,109 @@
+div p {
+  border: 1px solid gray;
+  padding: 16px;
+  margin: 0;
+}
+
+.flex1 {
+  /* Flexbox 課題No.1 */
+  display: flex;
+}
+
+.flex2 {
+  /* Flexbox 課題No.2 */
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex3 {
+  /* Flexbox 課題No.3 */
+  display: flex;
+  justify-content: center;
+}
+
+.flex4 {
+  /* Flexbox 課題No.4 */
+  display: flex;
+  justify-content: left;
+}
+
+.flex5 {
+  /* Flexbox 課題No.5 */
+  display: flex;
+  justify-content: right;
+}
+
+.flex6 {
+  /* Flexbox 課題No.6 */
+  display: flex;
+  align-items: flex-start;
+  height: 200px;
+}
+
+.flex7 {
+  /* Flexbox 課題No.7 */
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+}
+
+.flex8 {
+  /* Flexbox 課題No.8 */
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+/* Flexbox 課題No.9 */
+.flex9,
+.flex10,
+.flex11 {
+  display: flex;
+  border: 1px solid gray;
+  padding: 40px; /* 外枠から要素まで */
+  gap: 40px;     /* 要素同士の間 */
+}
+
+.flex9 {
+  margin-bottom: 40px; /* 上段と下段の間 */
+}
+
+.container {
+  display: flex;
+  height: 800px;
+  gap: 40px;
+}
+
+.flex10 {
+  flex-direction: column; /* 要素3・4を縦並び */
+  width: 400px;
+}
+
+.flex11 {
+  flex: 1; /* 残りの幅を使う */
+}
+
+.first {
+  width: 407px;
+}
+
+.fifth {
+  width: 300px;
+}
+
+.second,
+.fourth,
+.box-list,
+.box {
+  flex: 1; /* 残りの幅・高さを埋める */
+}
+
+.third {
+  height: 100px;
+}
+
+.box-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
