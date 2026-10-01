@@ -1,0 +1,77 @@
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.profile {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto 60px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.profile p {
+  font-size: 16px;
+  color: #666;
+}
+
+.skills {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.skills h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skill-table {
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.table-thead {
+  background-color: #0078D4;
+  color: white;
+}
+
+th, td{
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.table-thead,
+.table-tbody {
+  width: 100%;
+}
