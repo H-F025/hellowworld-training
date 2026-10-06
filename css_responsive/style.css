@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 /* 全体：各ブロックを縦に並べ、余白を30pxで統一 */
 .whole {
   display: grid;
