@@ -1,0 +1,84 @@
+.whole-container {
+  background-color:  #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  background-image: url(./images.jpeg);
+  background-size: cover;
+  background-position: center 70%;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.cards-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.cards-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cards-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.table-section {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 80%;
+}
+
+.table-section h2 {
+  margin-bottom: 20px;
+}
+
+.data-table {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.date-table-thead {
+  background-color: #0078D4;
+  color: white;
+}
+
+.date-table-tbody td:hover {
+  background-color: #f2f2f2;
+}
