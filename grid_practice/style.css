@@ -1,0 +1,80 @@
+.whole-grid-container {
+  margin: 30px;
+}
+
+.grid-container-top {
+  display: grid;
+  grid-template-columns: 5fr 7fr 3fr; /* 要素1 : 要素3 : 要素4 */
+  gap: 20px;
+  padding: 30px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  width: auto;
+  height: 250px;
+}
+
+.grid-item-1,
+.grid-item-2,
+.grid-item-3,
+.grid-item-4 {
+  background-color: #ccc;
+  text-align: center;
+  gap: 30px;
+}
+
+.grid-item-1 {
+  grid-row: span 2; /* 要素1を2行分の高さに拡張 */
+  height: 250px;
+}
+
+.grid-item-2 {
+  grid-column: span 2;
+  height: 100px;
+}
+
+.grid-item-3 {
+  height: 100px;
+}
+
+.grid-item-4 {
+  height: 100px;
+}
+.grid-container-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 40%; /* 各要素の幅を均等に設定 */
+  gap: 30px; /* 各アイテム間のギャップを30pxに設定 */
+}
+
+.grid-item-5,
+.grid-item-6,
+.grid-item-7,
+.grid-item-8,
+.grid-item-9 {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item-5,
+.grid-item-6 {
+  grid-column: span 3;
+  height: 80px;
+}
+
+.grid-item-7 {
+  grid-column: 1 / 2; /* 1〜2列目 */
+}
+
+.grid-item-8 {
+  grid-column: 3 / 4; /* 3〜4列目 */
+}
+
+.grid-item-9 {
+  grid-column: 4;    /* 4列目（右端） */
+  grid-row: 1 / 4;   /* 1本目の線から4本目の線まで ＝ 1〜3行目 */
+}
+
+.grid-item-7,
+.grid-item-8 {
+  height: 100px;
+}
