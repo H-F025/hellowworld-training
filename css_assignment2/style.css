@@ -79,6 +79,6 @@
   color: white;
 }
 
-.date-table-tbody td:hover {
+.date-table-tbody:hover {
   background-color: #f2f2f2;
 }
