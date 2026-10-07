@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+/* 全体：各ブロックを縦に並べ、余白を30pxで統一 */
+.whole {
+  display: grid;
+  gap: 30px;
+  margin: 30px;
+}
+
+/* 枠線・高さ・文字の中央寄せを共通でまとめて指定 */
+.header,
+.footer,
+.contents-top > div,
+.contents-row > div {
+  border: 1px solid black;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+/* コンテンツA・B：2列 */
+.contents-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* コンテンツ1〜4：4列 */
+.contents-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* 376px〜1279pxの間はcontents-rowの要素が2列になる */
+@media screen and (min-width: 376px) and (max-width: 1279px) {
+  .contents-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 375px以下はcontents-top,contents-rowの要素が1列縦並びになる */
+@media screen and (max-width: 375px) {
+  .contents-top,
+  .contents-row {
+    grid-template-columns: 1fr;
+  }
+}
