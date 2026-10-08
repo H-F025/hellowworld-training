@@ -1,0 +1,306 @@
+/* クリック時になめらかにスクロール */
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  /* 上で定義したルールを全体に引き継ぐためのコード(ここではbox-sizing: border-box;) */
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between; /* ロゴ左、メニュー右 */
+  align-items: center;            /* 縦中央 */
+  height: 270px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+@media screen and (max-width: 600px) {
+.header {
+  max-width: 100%;
+  height: auto;
+  flex-direction: column;
+  }
+}
+
+.header-logo {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+.header-logo {
+  margin-top: 20px;
+  margin-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  margin: 0;
+  padding: 10px 0;
+  align-items: center;
+  height: 45px;
+}
+
+.header-nav li {
+  list-style: none;
+  text-align: center;
+  margin-left: 30px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+.header li:first-child {
+  margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.header li {
+  font-size: 0.8rem;
+  margin-left: 20px;
+  }
+}
+
+.header-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.icon-instagram {
+  width: 20px;
+  height: 20px;
+}
+
+/* メイン画像：横幅いっぱい */
+.header-img img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;          /* 枠いっぱいに拡大し、はみ出しは切り取る */
+  object-position: center 100%; /* どの部分を見せるか（横 縦） */
+  transform: scale(1.05);  /* 1.05倍に拡大 */
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 375px) {
+.header-img img {
+  transform: scale(1);
+  object-position: 50% center;
+  }
+}
+
+/* 各セクション：中央寄せ */
+.section {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+
+@media screen and (max-width: 600px) {
+.section {
+  margin-bottom: 70px;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.section ul {
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+.section li {
+  list-style: none;
+}
+
+.section li[class="first"] {
+  margin-bottom: 30px;
+}
+
+.section p {
+  text-align: justify;
+}
+
+.works-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.works-list li {
+  width: 31%;
+  margin-bottom: 28px;
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+#works h2{
+  margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+#works ul {
+  flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+#works li{
+  width: 100%;
+  }
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+#news dl {
+  flex-direction: column;
+  }
+}
+
+.news-list dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+.news-list dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+.news-list dt,
+.news-list dd {
+  margin: 0;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 600px) {
+#news dt {
+  width: 100%;
+  border-bottom: none;
+  padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+#news dd {
+  width: 100%;
+  padding-top: 0;
+  }
+}
+
+/* Contact：ラベル左、入力欄右 */
+.contact-form dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+#contact dl {
+  flex-direction: column;
+  }
+}
+
+.contact-form dt {
+  width: 15%; /* ラベルの幅（入力欄との間隔もここで決まる） */
+}
+
+@media screen and (max-width: 600px) {
+#contact dt {
+  width: 100%;
+  }
+}
+
+.contact-form dd {
+  width: 85%;
+  margin: 0 0 10px; /* 左の初期余白を消し、下だけ空ける */
+}
+
+@media screen and (max-width: 600px) {
+#contact dd {
+  width: 100%;
+  }
+}
+
+/* 入力欄 */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c8c8c8;
+}
+
+.contact-form textarea {
+  height: 10rem;
+}
+
+/* 送信ボタン：中央に配置 */
+.button {
+  text-align: center;
+}
+
+.button input[type="submit"] {
+  width: 200px;
+  padding: 15px 0;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.button input[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  height: 30px;
+  padding: 0 20px;         /* 上下の padding をなくす */
+  display: flex;
+  justify-content: center; /* 横中央 */
+  align-items: center;     /* 縦中央 */
+}
+
+.footer p {
+  margin: 0; /* p の初期余白を消す */
+}
