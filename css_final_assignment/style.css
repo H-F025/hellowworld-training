@@ -37,6 +37,7 @@ img {
   max-width: 100%;
   height: auto;
   flex-direction: column;
+  padding-bottom: 15px;
   }
 }
 
@@ -100,7 +101,6 @@ a {
   height: 420px;
   object-fit: cover;          /* 枠いっぱいに拡大し、はみ出しは切り取る */
   object-position: center 100%; /* どの部分を見せるか（横 縦） */
-  transform: scale(1.05);  /* 1.05倍に拡大 */
   margin-bottom: 80px;
 }
 
@@ -155,27 +155,22 @@ a {
   margin-bottom: 50px;
 }
 
-.works-list li {
+.works-item {
   width: 31%;
   margin-bottom: 28px;
-  list-style: none;
 }
 
 @media screen and (max-width: 600px) {
-#works h2{
-  margin-bottom: 40px;
+  #works h2 {
+    margin-bottom: 40px;
   }
-}
 
-@media screen and (max-width: 600px) {
-#works ul {
-  flex-direction: column;
+  .works-list {
+    flex-direction: column;
   }
-}
 
-@media screen and (max-width: 600px) {
-#works li{
-  width: 100%;
+  .works-item {
+    width: 100%;
   }
 }
 
